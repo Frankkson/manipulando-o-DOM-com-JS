@@ -1,0 +1,17 @@
+const CriarTarefa = (evento) => {
+	evento.preventDefault();
+	const input = document.querySelector("[data-form-input]");
+	const inputValue = input.value;
+	console.log(inputValue);
+	input.value = "";
+
+	const tarefa = document.querySelector("[data-task]");
+	const conteudo = `<p class="content">${inputValue}</p>`;
+
+	tarefa.innerHTML = conteudo;
+	input.value = "";
+};
+
+const novaTarefa = document.querySelector("[data-form-button]");
+
+novaTarefa.addEventListener("click", CriarTarefa);
