@@ -17,7 +17,8 @@ body {
 	width: 100vw;
 }
 
-.check-button,
+/* TODO adicionar personalização de checkbox*/
+
 .delete-button {
 	background-color: #f6f1d1;
 	border: none;
@@ -113,8 +114,8 @@ body {
 	background-color: #0b2027;
 	font-family: var(--itemFont);
 	font-weight: var(--textWeight);
-	min-height: 300px;
-	min-width: 400px;
+	min-height: 450px;
+	min-width: 600px;
 	padding: 1rem;
 }
 

@@ -1,9 +1,7 @@
 const BotaoConcluir = () => {
-	const botaoConcluir = document.createElement("button");
+	const botaoConcluir = document.createElement("input");
 
-	botaoConcluir.classList.add("check-button");
-	botaoConcluir.innerText = "Concluir";
-
+	botaoConcluir.type = "checkbox";
 	botaoConcluir.addEventListener("click", concluirTarefa);
 
 	return botaoConcluir;
